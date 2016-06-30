@@ -32,7 +32,7 @@ case $1 in
 esac
 
 cargo install cargo-check
-cargo install rusfmt
+cargo install rustfmt
 echo "export PATH=$PATH:/root/.cargo/bin" >> ~/.bashrc
 
 echo 'installed'
