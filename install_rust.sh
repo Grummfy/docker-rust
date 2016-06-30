@@ -33,5 +33,6 @@ esac
 
 cargo install cargo-check
 cargo install rusfmt
+echo "export PATH=$PATH:/root/.cargo/bin" >> ~/.bashrc
 
 echo 'installed'

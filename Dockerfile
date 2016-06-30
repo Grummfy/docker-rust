@@ -16,7 +16,8 @@ RUN apt-get update && \
 		git \
 		libssl-dev \
 		sudo \
-		file
+		file \
+		vim
 
 COPY install_rust.sh /root/install_rust.sh
 
