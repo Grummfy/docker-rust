@@ -31,4 +31,7 @@ case $1 in
         ;; 
 esac
 
+cargo install cargo-check
+cargo install rusfmt
+
 echo 'installed'

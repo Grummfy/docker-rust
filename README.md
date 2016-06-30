@@ -8,6 +8,7 @@ language and a few supporting tools. The image includes the following tools :
 * `rustdoc`,
 * `cargo`,
 * `cargo-check,
+* `rusfmt`
 * `git`,
 * SSL certificates,
 * build essentials,
@@ -39,6 +40,12 @@ docker run --rm -v $PWD:/source grummfy/docker-rust cargo run
 
 ``` bash
 docker run --rm -v $PWD:/source grummfy/docker-rust rustc src/main.rs
+```
+
+#### format (coding style) your code
+
+``` bash
+docker run --rm -v $PWD:/source grummfy/docker-rust rustfmt src/main.rs
 ```
 
 ## Build it

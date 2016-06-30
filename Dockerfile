@@ -23,8 +23,7 @@ COPY install_rust.sh /root/install_rust.sh
 RUN sh /root/install_rust.sh $RUST_VERSION
 
 # cleanup
-RUN	DEBIAN_FRONTEND=noninteractive apt-get remove --purge -y curl && \
-	DEBIAN_FRONTEND=noninteractive apt-get autoremove -y && \
+RUN	DEBIAN_FRONTEND=noninteractive apt-get autoremove -y && \
 	rm -rf \
 		/var/lib/apt/lists/* \
 		/tmp/* \
