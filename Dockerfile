@@ -8,7 +8,7 @@ ENV RUST_VERSION ${RUST_VERSION}
 
 # uppdate the system and get curl, build-essential, git, etc
 RUN apt-get update && \
-	apt-get upgrade && \
+	DEBIAN_FRONTEND=noninteractive apt-get upgrade && \
 	DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
 		build-essential \
 		ca-certificates \
