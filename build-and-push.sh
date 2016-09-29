@@ -9,8 +9,8 @@ fi
 
 # build
 docker build --no-cache --build-arg RUST_VERSION=beta -t grummfy/docker-rust:beta-latest .
-docker build --no-cache --build-arg RUST_VERSION=stable -t grummfy/docker-rust:stable-latest .
-docker build --no-cache --build-arg RUST_VERSION=nightly -t grummfy/docker-rust:nightly-latest .
+docker build --build-arg RUST_VERSION=stable -t grummfy/docker-rust:stable-latest .
+docker build --build-arg RUST_VERSION=nightly -t grummfy/docker-rust:nightly-latest .
 
 # tag
 docker tag grummfy/docker-rust:stable-latest grummfy/docker-rust:$1
